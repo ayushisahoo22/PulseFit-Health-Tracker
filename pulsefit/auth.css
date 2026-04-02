@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* container */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* card */
+.login-box {
+  background: #111827; /* dark slate */
+  padding: 40px 30px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+/* title */
+.login-box h1 {
+  color: #22c55e; /* fitness green */
+  margin-bottom: 6px;
+}
+
+/* subtitle */
+.tagline {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* input group */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  background: #1f2933;
+  border: 1px solid #374151;
+  outline: none;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+.input-group input:focus {
+  border-color: #22c55e;
+}
+
+/* floating label */
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  color: #9ca3af;
+  font-size: 13px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  background: #111827;
+  padding: 0 6px;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -8px;
+  font-size: 11px;
+  color: #22c55e;
+}
+
+/* button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #22c55e;
+  color: #022c22;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #16a34a;
+}
+
+/* bottom text */
+.register-text {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.register-text a {
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: 600;
+}
